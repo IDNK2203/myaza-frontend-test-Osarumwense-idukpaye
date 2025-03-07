@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Logo1 from "../../public/images/logo-1.png";
 import { LoginForm } from "@/components/login-form";
@@ -6,10 +8,10 @@ import Link from "next/link";
 export default function LoginPage() {
   return (
     <div className="grid min-h-svh lg:grid-cols-2">
-      <div className="flex flex-col gap-4 p-6 md:p-10">
-        <div className="flex flex-col flex-1 items-center justify-center">
+      <div className="flex flex-col gap-4 p-6 md:p-10 bg-primary">
+        <div className="flex flex-col flex-1 items-center justify-center gap-5">
           <Logo />
-          <div className="w-full max-w-xs">
+          <div className="w-full max-w-md md:px-3">
             <LoginForm />
           </div>
         </div>
