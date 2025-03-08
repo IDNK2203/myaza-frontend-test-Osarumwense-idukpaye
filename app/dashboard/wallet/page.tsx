@@ -2,6 +2,7 @@ import { SearchForm } from "@/components/search-form";
 import { Heading } from "@/components/ui/heading-b";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import WalletsWrapper from "./wallet-balance-wrapper";
+import { TransactionTable } from "../transaction-table";
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       </header>
       <div className="w-full flex flex-col gap-4 py-6">
         <WalletsWrapper />
+        <TransactionTable />
       </div>
     </>
   );
