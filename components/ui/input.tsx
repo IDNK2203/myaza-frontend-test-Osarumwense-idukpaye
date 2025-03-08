@@ -5,7 +5,7 @@ interface InputProps extends React.ComponentProps<"input"> {
   isPassword?: boolean;
 }
 
-function Input({ className, type, isPassword = false, ...props }: InputProps) {
+function Input({ className, isPassword = false, ...props }: InputProps) {
   const [showPassword, setShowPassword] = React.useState(false);
 
   return (
