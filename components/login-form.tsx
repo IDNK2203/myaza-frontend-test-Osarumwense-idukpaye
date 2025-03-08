@@ -39,7 +39,12 @@ export function LoginForm({
             </a>
           </div>
         </div>
-        <Button type="submit" className="w-full">
+        <Button
+          type="submit"
+          className="w-full"
+          variant={"default"}
+          size={"xl"}
+        >
           Login
         </Button>
       </div>
