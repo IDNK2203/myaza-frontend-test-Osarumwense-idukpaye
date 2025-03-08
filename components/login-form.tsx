@@ -2,9 +2,9 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Space_GroteskFont } from "@/lib/font";
 import Logo1 from "../public/images/logo-1.png";
 import { Logo } from "./ui/logo";
+import { Heading } from "./ui/heading-a";
 
 export function LoginForm({
   className,
@@ -65,14 +65,3 @@ export function LoginForm({
     </form>
   );
 }
-
-const Heading = ({ heading, rider }: { heading: string; rider: string }) => {
-  return (
-    <div className={`flex flex-col items-center gap-2 text-center `}>
-      <h1 className={`text-2xl font-bold ${Space_GroteskFont.className}`}>
-        {heading}
-      </h1>
-      <p className="text-muted-foreground text-balance">{rider}</p>
-    </div>
-  );
-};

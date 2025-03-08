@@ -13,6 +13,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { Logo } from "./ui/logo";
 import {
@@ -69,7 +70,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const pathname = usePathname();
 
   return (
-    <Sidebar {...props}>
+    <Sidebar {...props} className="">
+      <SidebarTrigger className="absolute top-13 -right-7 hidden md:flex border-2 border-l-0  rounded-sm rounded-l-none border-accent-foreground cursor-pointer" />
+
       <SidebarHeader>
         <Logo image={Logo2} />
       </SidebarHeader>
