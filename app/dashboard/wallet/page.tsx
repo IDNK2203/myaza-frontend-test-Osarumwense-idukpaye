@@ -1,6 +1,7 @@
 import { SearchForm } from "@/components/search-form";
 import { Heading } from "@/components/ui/heading-b";
 import { SidebarTrigger } from "@/components/ui/sidebar";
+import WalletsWrapper from "./wallet-balance-wrapper";
 
 export default function Page() {
   return (
@@ -13,7 +14,9 @@ export default function Page() {
         />
         <SearchForm className="w-full max-w-96" />
       </header>
-      <div className="w-full flex flex-col gap-4"></div>
+      <div className="w-full flex flex-col gap-4 py-6">
+        <WalletsWrapper />
+      </div>
     </>
   );
 }
