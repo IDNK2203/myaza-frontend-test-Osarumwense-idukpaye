@@ -6,6 +6,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
+import MetricCards from "./metrics-cards";
 
 export default function Page() {
   return (
@@ -20,13 +21,15 @@ export default function Page() {
           />
           <SearchForm className="w-full max-w-96" />
         </header>
-        <div className="flex flex-1 flex-col gap-4 py-4">
-          <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div className="bg-muted/50 aspect-video rounded-xl" />
-            <div className="bg-muted/50 aspect-video rounded-xl" />
-            <div className="bg-muted/50 aspect-video rounded-xl" />
+        <div className="py-4 w-full">
+          <div className="grid gap-4  md:grid-cols-[1.28fr_1fr] w-full">
+            <div className="p-2 w-full h-[465px]">
+              <MetricCards />
+            </div>
+            <div className="p-2 w-full h-[465px]"></div>
+            <div className="p-2 w-full h-[362px]"></div>
+            <div className="p-2 w-full h-[362px]"></div>
           </div>
-          <div className="bg-muted/50 min-h-[100vh] flex-1 rounded-xl md:min-h-min" />
         </div>
       </SidebarInset>
     </SidebarProvider>
