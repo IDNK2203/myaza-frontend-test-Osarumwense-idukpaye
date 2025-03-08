@@ -1,16 +1,11 @@
 "use client";
-
-import Image from "next/image";
-import Logo1 from "../../public/images/logo-1.png";
 import { LoginForm } from "@/components/login-form";
-import Link from "next/link";
 
 export default function LoginPage() {
   return (
     <div className="grid min-h-svh lg:grid-cols-2">
       <div className="flex flex-col gap-4 p-6 md:p-10 bg-primary">
-        <div className="flex flex-col flex-1 items-center justify-center gap-5">
-          <Logo />
+        <div className="flex flex-col flex-1 items-center md:items-end justify-center md:justify-start gap-5 md:pr-8 md:pt-24">
           <div className="w-full max-w-md md:px-3">
             <LoginForm />
           </div>
@@ -26,13 +21,3 @@ export default function LoginPage() {
     </div>
   );
 }
-
-const Logo = () => {
-  return (
-    <div className="w-full flex justify-center max-w-28">
-      <Link href="#" className="flex items-center gap-2 font-medium">
-        <Image alt="Brand Logo" src={Logo1} className="w-full" />{" "}
-      </Link>
-    </div>
-  );
-};

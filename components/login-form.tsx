@@ -3,6 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Space_GroteskFont } from "@/lib/font";
+import Image from "next/image";
+import Logo1 from "../public/images/logo-1.png";
+import Link from "next/link";
 
 export function LoginForm({
   className,
@@ -10,6 +13,9 @@ export function LoginForm({
 }: React.ComponentProps<"form">) {
   return (
     <form className={cn("flex flex-col gap-6", className)} {...props}>
+      <div className="w-full flex justify-center items-center">
+        <Logo />
+      </div>
       <Heading
         heading="Welcome back, Ali Riaz 🙇🏾‍♀️"
         rider="Login to access your Uifry account"
@@ -68,6 +74,16 @@ const Heading = ({ heading, rider }: { heading: string; rider: string }) => {
         {heading}
       </h1>
       <p className="text-muted-foreground text-balance">{rider}</p>
+    </div>
+  );
+};
+
+const Logo = () => {
+  return (
+    <div className="w-full flex justify-center max-w-28 items-center">
+      <Link href="#" className="flex items-center gap-2 font-medium">
+        <Image alt="Brand Logo" src={Logo1} className="w-full" />{" "}
+      </Link>
     </div>
   );
 };
