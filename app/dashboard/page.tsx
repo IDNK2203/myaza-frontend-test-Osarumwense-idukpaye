@@ -7,6 +7,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import MetricCards from "./metrics-cards";
+import CreditCardWidget from "./credit-card-widget";
 
 export default function Page() {
   return (
@@ -26,7 +27,9 @@ export default function Page() {
             <div className="p-2 w-full h-[465px]">
               <MetricCards />
             </div>
-            <div className="p-2 w-full h-[465px]"></div>
+            <div className="p-2 w-full h-[465px]">
+              <CreditCardWidget />
+            </div>
             <div className="p-2 w-full h-[362px]"></div>
             <div className="p-2 w-full h-[362px]"></div>
           </div>
