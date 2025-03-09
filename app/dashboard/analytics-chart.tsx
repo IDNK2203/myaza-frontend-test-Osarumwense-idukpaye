@@ -43,7 +43,7 @@ export function AnalyticsChart() {
   };
 
   return (
-    <Card className="w-full rounded-lg bg-primary @md:p-6 p-4 border-none text-foreground">
+    <Card className="w-full rounded-lg bg-primary @md:p-6 p-4 border-none text-foreground grow justify-between">
       <CardHeader className="px-0">
         <div className="mb-6 flex flex-col @md:flex-row  items-start @md:items-center justify-between">
           <h2 className="text-lg @md:text-2xl font-semibold">Analytics</h2>

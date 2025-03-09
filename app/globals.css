@@ -77,7 +77,7 @@
   --chart-1: #64cff6;
   --chart-2: #6359e9;
   --chart-3: #8f89d2;
-  --chart-4: #f0c3fc;
+  --chart-4: #3a3a5a;
   --chart-5: #ffd0a0;
   --radius: 0.625rem;
   --sidebar: #f2f3ff;
@@ -115,7 +115,7 @@
   --chart-1: #64cff6;
   --chart-2: #6359e9;
   --chart-3: #464687;
-  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-4: #3a3a5a;
   --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.21 0.034 264.665);
   --sidebar-foreground: oklch(0.985 0.002 247.839);

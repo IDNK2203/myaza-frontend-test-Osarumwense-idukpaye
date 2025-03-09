@@ -40,7 +40,7 @@ const WidgetsSection = () => {
           <div className="w-full flex flex-[1.28] flex-col gap-4">
             <TransactionTable />
           </div>
-          <div className="w-full flex-col flex-1">
+          <div className="w-full flex-col flex-1 flex">
             <ActivityChart />
           </div>
         </div>

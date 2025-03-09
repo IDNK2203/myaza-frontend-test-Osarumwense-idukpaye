@@ -63,8 +63,10 @@ const transactions = [
 ];
 
 export function TransactionTable({ large = false }: { large?: boolean }) {
+  const rowsToShow = large ? transactions.length : 5; // Show only 3 rows for small table
+  const displayedTransactions = transactions.slice(0, rowsToShow);
   return (
-    <section className="bg-primary rounded-2xl p-6 py-8 shadow ">
+    <section className="bg-primary rounded-2xl p-6 py-8 shadow grow">
       <div className="flex justify-between items-center mb-2">
         <h2 className="text-2xl font-bold mb-2">Recent Transactions</h2>
         <span className="text-accent-foreground">See All</span>
@@ -89,7 +91,7 @@ export function TransactionTable({ large = false }: { large?: boolean }) {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {transactions.map((transaction, index) => (
+          {displayedTransactions.map((transaction, index) => (
             <TableRow
               key={index}
               className="border-b border-[#2D2B4D] last-of-type:border-none"
