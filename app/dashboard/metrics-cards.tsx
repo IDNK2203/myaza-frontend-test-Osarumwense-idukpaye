@@ -10,6 +10,36 @@ interface MetricCardProps {
   bgColor: string;
 }
 
+const metricsData = [
+  {
+    title: "Total Income",
+    amount: 632000,
+    percentage: 1.29,
+    isPositive: true,
+    bgColor: "bg-[#64CFF6]",
+    icon: <MoveDownRight />,
+  },
+  {
+    title: "Total Outcome",
+    amount: 632000,
+
+    percentage: 1.29,
+    isPositive: false,
+    bgColor: "bg-[#6359E9]",
+    icon: <MoveUpRight />,
+  },
+];
+
+const MetricCards = () => {
+  return (
+    <div className="grid grid-cols-1 @md:grid-cols-2 gap-4 max-w-4xl mx-auto w-full">
+      {metricsData.map((metric, index) => (
+        <MetricCard key={index} {...metric} />
+      ))}
+    </div>
+  );
+};
+
 const MetricCard: React.FC<MetricCardProps> = ({
   title,
   amount,
@@ -40,30 +70,6 @@ const MetricCard: React.FC<MetricCardProps> = ({
           {Math.abs(percentage)}%
         </div>
       </div>
-    </div>
-  );
-};
-
-const MetricCards: React.FC = () => {
-  return (
-    <div className="grid grid-cols-1 @md:grid-cols-2 gap-4 max-w-4xl mx-auto w-full">
-      <MetricCard
-        title="Total Income"
-        amount={632000}
-        percentage={1.29}
-        isPositive={true}
-        bgColor="bg-[#64CFF6]"
-        icon={<MoveDownRight />}
-      />
-
-      <MetricCard
-        title="Total Outcome"
-        amount={632000}
-        percentage={1.29}
-        isPositive={false}
-        bgColor="bg-[#6359E9]"
-        icon={<MoveUpRight />}
-      />
     </div>
   );
 };

@@ -22,7 +22,7 @@ import {
   HelpIcon,
   UserIcon,
   WalletIcon,
-} from "@/app/dashboard/icons";
+} from "@/components/icons";
 import { usePathname } from "next/navigation";
 import { Separator } from "./ui/separator";
 import { ModeToggle } from "./ui/mode-toggle";

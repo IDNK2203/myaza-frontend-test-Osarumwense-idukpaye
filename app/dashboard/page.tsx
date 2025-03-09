@@ -18,27 +18,33 @@ export default function Page() {
         />
         <SearchForm className="w-full max-w-96" />
       </header>
-      <div className="py-4 w-full">
-        <div className="flex flex-col gap-4 w-full">
-          <div className="flex flex-col @md:flex-row gap-4 w-full  ">
-            <div className="w-full flex flex-[1.28] flex-col gap-4">
-              <MetricCards />
-              <AnalyticsChart />
-            </div>
-            <div className="w-full flex-col flex-1 flex">
-              <CreditCardWidget />
-            </div>
-          </div>
-          <div className="flex flex-col @md:flex-row gap-4 w-full ">
-            <div className="w-full flex flex-[1.28] flex-col gap-4">
-              <TransactionTable />
-            </div>
-            <div className="w-full flex-col flex-1">
-              <ActivityChart />
-            </div>
-          </div>
-        </div>
-      </div>
+      <WidgetsSection />
     </>
   );
 }
+
+const WidgetsSection = () => {
+  return (
+    <div className="py-4 w-full">
+      <div className="flex flex-col gap-4 w-full">
+        <div className="flex flex-col @md:flex-row gap-4 w-full  ">
+          <div className="w-full flex flex-[1.28] flex-col gap-4">
+            <MetricCards />
+            <AnalyticsChart />
+          </div>
+          <div className="w-full flex-col flex-1 flex">
+            <CreditCardWidget />
+          </div>
+        </div>
+        <div className="flex flex-col @md:flex-row gap-4 w-full ">
+          <div className="w-full flex flex-[1.28] flex-col gap-4">
+            <TransactionTable />
+          </div>
+          <div className="w-full flex-col flex-1">
+            <ActivityChart />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};

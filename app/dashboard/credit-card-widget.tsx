@@ -1,34 +1,36 @@
 // components/CreditCard.jsx
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
-import mastercardLogo from "../../public/images/mastercard_logo.png";
+// import Image from "next/image";
+// import mastercardLogo from "../../public/images/mastercard_logo.png";
 import { Button } from "@/components/ui/button";
+import CreditCard from "./credit-card";
 
-const CreditCard = () => {
-  const cards = [
+const CreditCardWidget = () => {
+  const creditCardsData = [
     {
-      id: 1,
-      quote:
-        "I've been using Uifry for over a year, and it's helped simplify all my payments.",
-      author: "Ali Riaz",
-      location: "Singapore",
-      rating: 5,
+      cardHolder: "John Doe",
+      balance: 1000.0,
+      currentBalance: 500.0,
+      cardNumber: "1234 5678 9876 5432",
+      expiryDate: "12/25",
+      brand: "visa",
     },
     {
-      id: 2,
-      quote:
-        "This platform transformed how I manage my finances. Couldn't be happier!",
-      author: "Sarah Johnson",
-      location: "New York",
-      rating: 5,
+      cardHolder: "Jane Smith",
+      balance: 2000.0,
+      currentBalance: 1500.0,
+      cardNumber: "2345 6789 8765 4321",
+      expiryDate: "11/24",
+      brand: "mastercard",
     },
     {
-      id: 3,
-      quote: "The best financial app I've ever used. Intuitive and reliable.",
-      author: "Miguel Santos",
-      location: "Barcelona",
-      rating: 5,
+      cardHolder: "Alice Johnson",
+      balance: 5000.0,
+      currentBalance: 4500.0,
+      cardNumber: "3456 7890 9876 3210",
+      expiryDate: "10/23",
+      brand: "visa",
     },
   ];
 
@@ -47,39 +49,19 @@ const CreditCard = () => {
 
         <div className="text-card-foreground  mb-1">Card Balance</div>
         <div className="text-white text-lg @md:text-2xl font-bold mb-6">
-          $15,595.015
+          $15,595,015
         </div>
       </div>
 
-      {/* Credit Card */}
-      <div className="grow overflow-hidden relative shadow flex flex-col justify-between h-[200px] bg-gradient-to-br from-[#9C2CF3] to-[#3A6FF9] rounded-2xl p-4 sm:p-8 mb-6">
-        {/* Background wave pattern - simplified for this example */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-3/5 -left-14 h-56 w-60 bg-black/50 rounded-full transform scale-x-150"></div>
-          <div className="absolute -top-3/5 -right-20 h-56 w-60 bg-black/50 rounded-full transform scale-x-150"></div>
-        </div>
-
-        <div className="flex justify-between items-start mb-8">
-          <div>
-            <div className="text-white/80 text-sm mb-1">Current Balance</div>
-            <div className="text-white text-3xl font-medium">$5,750.20</div>
-          </div>
-          <div>
-            <div className="w-full flex justify-center max-w-28 items-center">
-              <Image alt="Brand Logo" src={mastercardLogo} className="w-full" />{" "}
-            </div>
-          </div>
-        </div>
-
-        <div className="flex justify-between items-center">
-          <div className="text-white tracking-wider">5282 3456 7890 1289</div>
-          <div className="text-white">09/25</div>
-        </div>
-      </div>
+      <CreditCard
+        balance="$5,750.20"
+        cardNumber="5282 3456 7890 1289"
+        expiryDate="09/25"
+      />
 
       {/* Card Selector Indicator */}
       <div className="flex justify-center mb-6">
-        {cards.map((_, index) => (
+        {creditCardsData.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
@@ -106,4 +88,4 @@ const CreditCard = () => {
   );
 };
 
-export default CreditCard;
+export default CreditCardWidget;
