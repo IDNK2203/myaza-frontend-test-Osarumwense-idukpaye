@@ -12,7 +12,7 @@ export const Heading = ({
       <h1 className={`text-2xl font-bold ${Space_GroteskFont.className}`}>
         {heading}
       </h1>
-      <p className="text-muted-foreground text-balance">{rider}</p>
+      <p className="text-slient-foreground text-balance">{rider}</p>
     </div>
   );
 };
