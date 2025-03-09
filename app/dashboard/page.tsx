@@ -4,7 +4,7 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Heading } from "@/components/ui/heading-b";
 import { SearchForm } from "@/components/search-form";
 import { AnalyticsChart } from "./analytics-chart";
-import ActivityChart from "./wallet/activity-chart";
+import ActivityChart from "./activity-chart";
 import { TransactionTable } from "./transaction-table";
 
 export default function Page() {

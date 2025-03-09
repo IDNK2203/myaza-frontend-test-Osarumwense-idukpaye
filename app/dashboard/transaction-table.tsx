@@ -1,9 +1,7 @@
 import {
   Table,
   TableBody,
-  //   TableCaption,
   TableCell,
-  //   TableFooter,
   TableHead,
   TableHeader,
   TableRow,
@@ -72,7 +70,6 @@ export function TransactionTable({ large = false }: { large?: boolean }) {
         <span className="text-accent-foreground">See All</span>
       </div>
       <Table>
-        {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
         <TableHeader>
           <TableRow className="text-accent-foreground border-b border-[#2D2B4D]">
             <TableHead className="w-[100px] text-accent-foreground">

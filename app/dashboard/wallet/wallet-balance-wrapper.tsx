@@ -1,9 +1,7 @@
-// pages/wallets.tsx or app/wallets/page.tsx
 import React from "react";
 import WalletBalance from "./wallet-balance";
 
 const WalletsWrapper: React.FC = () => {
-  // Sample data - in a real app, this would come from an API or state management
   const walletData = {
     consolidatedBalance: 34780267.08,
     wallets: [
@@ -32,8 +30,6 @@ const WalletsWrapper: React.FC = () => {
     <WalletBalance
       consolidatedBalance={walletData.consolidatedBalance}
       wallets={walletData.wallets}
-      //   onAddWallet={handleAddWallet}
-      //   onMoreOptions={handleMoreOptions}
     />
   );
 };

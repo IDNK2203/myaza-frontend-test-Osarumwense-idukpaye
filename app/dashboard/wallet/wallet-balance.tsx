@@ -6,11 +6,6 @@ import GB_flag from "../../../public/images/gbp-logo.png";
 import USA_flag from "../../../public/images/usa-logo.png";
 import { Button } from "@/components/ui/button";
 
-// components/WalletBalance.tsx
-// import React } from 'react';
-// import Image from 'next/image';
-
-// Define types for our wallet data
 type Currency = "NGN" | "GBP" | "USD";
 
 interface Wallet {
@@ -23,8 +18,6 @@ interface Wallet {
 interface WalletBalanceProps {
   consolidatedBalance: number;
   wallets: Wallet[];
-  //   onAddWallet: () => void;
-  //   onMoreOptions: () => void;
 }
 
 // Helper function to format currency
@@ -38,8 +31,6 @@ const formatCurrency = (amount: number): string => {
 const WalletBalance: React.FC<WalletBalanceProps> = ({
   consolidatedBalance,
   wallets,
-  //   onAddWallet,
-  //   onMoreOptions,
 }) => {
   const handleAddWallet = () => {
     console.log("Add new wallet");
