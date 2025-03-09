@@ -6,7 +6,7 @@ function CoverImageSection() {
   return (
     <>
       <TestimonialSlider />
-      <div className="absolute -bottom-52 w-5xl h-[700px] flex justify-center">
+      <div className="absolute -bottom-64 w-5xl h-[700px] flex justify-center">
         <Image
           src={dashboardMockup}
           alt="Parent and child learning together"

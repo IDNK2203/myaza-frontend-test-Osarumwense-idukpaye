@@ -111,7 +111,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         </SidebarGroup>
         <Separator
           orientation="horizontal"
-          className="mt-6 mb-2 data-[orientation=horizontal]:w-full h-px bg-[#4B4B99]"
+          className="my-4 data-[orientation=horizontal]:w-full h-px bg-[#4B4B99]"
         />
         <SidebarGroup>
           <SidebarGroupContent>

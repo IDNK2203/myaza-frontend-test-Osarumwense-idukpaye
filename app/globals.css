@@ -6,6 +6,7 @@
 
 @theme {
   --container-md: 48rem;
+  --container-lg: 64rem;
 }
 
 @theme inline {

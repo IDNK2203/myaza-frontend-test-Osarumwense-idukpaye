@@ -49,13 +49,17 @@ const MetricCard: React.FC<MetricCardProps> = ({
   bgColor,
 }) => {
   return (
-    <div className="bg-primary rounded-2xl p-4 shadow">
+    <div className="bg-primary rounded-2xl @lg:p-4 p-3 shadow">
       <div className="flex items-end justify-between">
         <div className="flex items-center justify-start">
-          <div className={`p-1.5 rounded-lg ${bgColor} mr-3`}>{icon}</div>
+          <div className={`p-1.5 rounded-lg ${bgColor} @lg:mr-2 mr-3`}>
+            {icon}
+          </div>
           <div className="flex flex-col gap-1">
             <p className="text-card-foreground text-sm">{title}</p>
-            <h3 className=" text-2xl font-bold">${amount.toLocaleString()}</h3>
+            <h3 className="text-xl @lg:text-2xl font-bold">
+              ${amount.toLocaleString()}
+            </h3>
           </div>
         </div>
 

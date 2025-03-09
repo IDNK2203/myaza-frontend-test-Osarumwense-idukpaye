@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <>
       <header className="flex flex-col @md:flex-row @md:h-16 shrink-0 items-start @md:items-center gap-4 @md:justify-between">
-        <SidebarTrigger className="cursor-pointer absolute top-8 right-4 flex @md:hidden border-2 rounded-sm  border-accent-foreground" />
+        <SidebarTrigger className="cursor-pointer absolute top-8 right-4 flex md:hidden border-2 rounded-sm  border-accent-foreground" />
         <Heading
           heading="My wallets"
           rider="Manage all your wallets from here"

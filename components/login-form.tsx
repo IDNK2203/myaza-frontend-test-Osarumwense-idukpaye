@@ -57,7 +57,7 @@ export function LoginForm({
         Not Ali Riaz?
         <a
           href="#"
-          className="underline underline-offset-4 text-primary-foreground"
+          className="underline underline-offset-4 text-primary-foreground mx-2"
         >
           Sign up to continue
         </a>

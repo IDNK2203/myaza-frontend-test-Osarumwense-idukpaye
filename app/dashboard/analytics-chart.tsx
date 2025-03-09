@@ -47,15 +47,18 @@ export function AnalyticsChart() {
       <CardHeader className="px-0">
         <div className="mb-6 flex flex-col @md:flex-row  items-start @md:items-center justify-between">
           <h2 className="text-lg @md:text-2xl font-semibold">Analytics</h2>
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2">
-              <span className="h-3 w-3 rounded-full bg-chart-2"></span>
-              <span className="text-sm">Income</span>
+          <div className="flex w-full @md:w-auto justify-between items-center gap-4">
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2">
+                <span className="h-3 w-3 rounded-full bg-chart-2"></span>
+                <span className="text-sm">Income</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="h-3 w-3 rounded-full bg-chart-1"></span>
+                <span className="text-sm">Outcome</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="h-3 w-3 rounded-full bg-chart-1"></span>
-              <span className="text-sm">Outcome</span>
-            </div>
+
             <Select defaultValue="2020">
               <SelectTrigger className="h-8 w-20 px-2 border border-card-foreground bg-transparent text-card-foreground">
                 <SelectValue />

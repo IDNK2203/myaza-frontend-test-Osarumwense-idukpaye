@@ -42,6 +42,7 @@ const TestimonialSlider = () => {
 
   // Manual navigation
   const goToSlide = (index: number) => {
+    console.log("next");
     setCurrentSlide(index);
   };
 
@@ -96,7 +97,7 @@ const TestimonialSlider = () => {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`size-3 mx-1 rounded-full transition-colors cursor-pointer ${
+              className={`size-3 mx-1 rounded-full transition-colors transition-normal cursor-pointer ${
                 currentSlide === index
                   ? "bg-primary-foreground w-4"
                   : "bg-primary"

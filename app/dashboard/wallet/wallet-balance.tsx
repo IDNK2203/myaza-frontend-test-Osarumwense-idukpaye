@@ -44,7 +44,7 @@ const WalletBalance: React.FC<WalletBalanceProps> = ({
 
   return (
     <div className="bg-primary p-6 rounded-2xl">
-      <div className="flex flex-col md:flex-row gap-4 justify-between items-start mb-8 w-full">
+      <div className="flex flex-col @md:flex-row gap-4 justify-between items-start mb-8 w-full">
         <div>
           <p className="text-gray-400 text-sm mb-1">
             Your consolidated balance
@@ -53,11 +53,11 @@ const WalletBalance: React.FC<WalletBalanceProps> = ({
             ${formatCurrency(consolidatedBalance)}
           </h2>
         </div>
-        <div className="flex items-center justify-between max-w-96 mr-6 ">
+        <div className="flex items-center justify-between w-full @md:w-auto mr-6 ">
           <Button
             onClick={handleAddWallet}
             type="submit"
-            className="w-full"
+            className="w-full max-w-52 @md:max-w-96 "
             variant={"default"}
             size={"xl"}
           >
@@ -89,7 +89,7 @@ const WalletBalance: React.FC<WalletBalanceProps> = ({
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl">
+      <div className="grid grid-cols-1 @md:grid-cols-3 gap-4 max-w-4xl">
         {wallets.map((wallet) => (
           <div
             key={wallet.id}
