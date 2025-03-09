@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <SidebarProvider>
       <AppSidebar />
-      <SidebarInset className="p-4 md:p-12 py-8 relative">
+      <SidebarInset className="p-4 md:p-12 py-8 relative @container">
         {children}
       </SidebarInset>
     </SidebarProvider>

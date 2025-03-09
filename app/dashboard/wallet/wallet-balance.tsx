@@ -98,7 +98,7 @@ const WalletBalance: React.FC<WalletBalanceProps> = ({
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:max-w-10/12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl">
         {wallets.map((wallet) => (
           <div
             key={wallet.id}

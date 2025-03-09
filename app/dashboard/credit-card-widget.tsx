@@ -39,14 +39,20 @@ const CreditCard = () => {
   };
 
   return (
-    <div className="bg-primary rounded-2xl p-6 py-8 shadow mx-auto">
-      <h2 className="text-white text-2xl font-bold mb-2">My Card</h2>
+    <div className=" flex flex-col bg-primary rounded-2xl @md:p-6 p-4 shadow mx-auto grow w-full">
+      <div>
+        <h2 className="text-white text-lg @md:text-2xl font-bold mb-2">
+          My Card
+        </h2>
 
-      <div className="text-card-foreground  mb-1">Card Balance</div>
-      <div className="text-white text-2xl font-bold mb-6">$15,595.015</div>
+        <div className="text-card-foreground  mb-1">Card Balance</div>
+        <div className="text-white text-lg @md:text-2xl font-bold mb-6">
+          $15,595.015
+        </div>
+      </div>
 
       {/* Credit Card */}
-      <div className="overflow-hidden relative shadow flex flex-col justify-between h-[200px] bg-gradient-to-br from-[#9C2CF3] to-[#3A6FF9] rounded-2xl p-8 mb-6">
+      <div className="grow overflow-hidden relative shadow flex flex-col justify-between h-[200px] bg-gradient-to-br from-[#9C2CF3] to-[#3A6FF9] rounded-2xl p-4 sm:p-8 mb-6">
         {/* Background wave pattern - simplified for this example */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-3/5 -left-14 h-56 w-60 bg-black/50 rounded-full transform scale-x-150"></div>

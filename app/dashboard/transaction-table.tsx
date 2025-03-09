@@ -64,7 +64,7 @@ const transactions = [
   },
 ];
 
-export function TransactionTable() {
+export function TransactionTable({ large = false }: { large?: boolean }) {
   return (
     <section className="bg-primary rounded-2xl p-6 py-8 shadow ">
       <div className="flex justify-between items-center mb-2">
@@ -79,9 +79,12 @@ export function TransactionTable() {
               Name
             </TableHead>
             <TableHead className="text-accent-foreground">Date</TableHead>
-            <TableHead className="text-accent-foreground">
-              Description
-            </TableHead>
+            {large && (
+              <TableHead className="text-accent-foreground">
+                Description
+              </TableHead>
+            )}
+
             <TableHead className="text-accent-foreground">Amount</TableHead>
             <TableHead className="text-right text-accent-foreground">
               Status
@@ -106,7 +109,8 @@ export function TransactionTable() {
                   <span>{transaction.name}</span>
                 </div>
               </TableCell>
-              <TableCell>{transaction.Description}</TableCell>
+              {large && <TableCell>{transaction.Description}</TableCell>}
+
               <TableCell>{transaction.Date}</TableCell>
               <TableCell>{transaction.totalAmount}</TableCell>
               <TableCell className="text-right">

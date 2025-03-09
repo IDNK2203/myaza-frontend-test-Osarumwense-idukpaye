@@ -46,7 +46,7 @@ const MetricCard: React.FC<MetricCardProps> = ({
 
 const MetricCards: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 max-w-4xl mx-auto">
+    <div className="grid grid-cols-1 @md:grid-cols-2 gap-4 max-w-4xl mx-auto w-full">
       <MetricCard
         title="Total Income"
         amount={632000}
