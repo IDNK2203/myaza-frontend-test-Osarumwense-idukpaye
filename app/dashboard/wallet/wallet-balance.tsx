@@ -49,7 +49,7 @@ const WalletBalance: React.FC<WalletBalanceProps> = ({
           <p className="text-gray-400 text-sm mb-1">
             Your consolidated balance
           </p>
-          <h2 className="text-white text-3xl font-bold">
+          <h2 className="text-foreground text-3xl font-bold">
             ${formatCurrency(consolidatedBalance)}
           </h2>
         </div>
@@ -113,7 +113,7 @@ const WalletBalance: React.FC<WalletBalanceProps> = ({
                   </div>
                 )}
               </div>
-              <span className="text-white font-medium">
+              <span className="text-foreground font-medium">
                 {wallet.currency} Wallet
               </span>
             </div>

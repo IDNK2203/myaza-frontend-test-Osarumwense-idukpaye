@@ -43,7 +43,7 @@ export function AnalyticsChart() {
   };
 
   return (
-    <Card className="w-full rounded-lg bg-primary @md:p-6 p-4 border-none text-white">
+    <Card className="w-full rounded-lg bg-primary @md:p-6 p-4 border-none text-foreground">
       <CardHeader className="px-0">
         <div className="mb-6 flex flex-col @md:flex-row  items-start @md:items-center justify-between">
           <h2 className="text-lg @md:text-2xl font-semibold">Analytics</h2>
@@ -63,7 +63,7 @@ export function AnalyticsChart() {
               <SelectTrigger className="h-8 w-20 px-2 border border-card-foreground bg-transparent text-card-foreground">
                 <SelectValue />
               </SelectTrigger>
-              <SelectContent className="bg-[#2a2440] text-white">
+              <SelectContent className="bg-[#2a2440] text-foreground">
                 <SelectItem value="2020">2020</SelectItem>
                 <SelectItem value="2021">2021</SelectItem>
                 <SelectItem value="2022">2022</SelectItem>
@@ -130,10 +130,12 @@ export function AnalyticsChart() {
                   }}
                   labelFormatter={(label) => {
                     return (
-                      <div className="font-medium text-white">{label} 2020</div>
+                      <div className="font-medium text-foreground">
+                        {label} 2020
+                      </div>
                     );
                   }}
-                  className="rounded-md border-none bg-chart-3 p-3 text-white shadow-md"
+                  className="rounded-md border-none bg-chart-3 p-3 text-foreground shadow-md"
                 />
               }
             />

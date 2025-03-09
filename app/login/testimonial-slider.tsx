@@ -81,7 +81,7 @@ const TestimonialSlider = () => {
               <div className="flex gap-1 mb-4">
                 {renderStars(testimonial.rating)}
               </div>
-              <p className="text-white text-2xl sm:text-4xl font-bold mb-4">
+              <p className="text-foreground text-2xl sm:text-4xl font-bold mb-4">
                 {`"${testimonial.quote}"`}
               </p>
               <div className="text-secondary-foreground">

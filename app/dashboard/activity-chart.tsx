@@ -44,14 +44,14 @@ export default function ActivityChart() {
   });
 
   return (
-    <Card className="w-full max-w-xs bg-[#1A1A3A] text-white border-none p-4">
+    <Card className="w-full max-w-xs bg-[#1A1A3A] text-foreground border-none p-4">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-semibold">Activity</h2>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button
               variant="outline"
-              className="h-8 border-[#3A3A5A] bg-transparent text-white hover:bg-[#2A2A4A] hover:text-white"
+              className="h-8 border-[#3A3A5A] bg-transparent text-foreground hover:bg-[#2A2A4A] hover:text-foreground"
             >
               {timeframe}
               <ChevronDown className="ml-1 h-4 w-4" />
@@ -59,7 +59,7 @@ export default function ActivityChart() {
           </DropdownMenuTrigger>
           <DropdownMenuContent
             align="end"
-            className="bg-[#2A2A4A] border-[#3A3A5A] text-white"
+            className="bg-[#2A2A4A] border-[#3A3A5A] text-foreground"
           >
             <DropdownMenuItem
               onClick={() => setTimeframe("Day")}
@@ -137,7 +137,7 @@ export default function ActivityChart() {
 
       <Button
         variant="outline"
-        className="w-full mt-4 border-[#3A3A5A] bg-transparent text-white hover:bg-[#2A2A4A] hover:text-white"
+        className="w-full mt-4 border-[#3A3A5A] bg-transparent text-foreground hover:bg-[#2A2A4A] hover:text-foreground"
       >
         See All Activity
       </Button>

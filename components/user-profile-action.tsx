@@ -51,7 +51,7 @@ const UserProfileDropdown = () => {
   //       {/* Profile Button */}
   //       <button
   //         onClick={() => setIsOpen(!isOpen)}
-  //         className="flex items-center gap-2 py-2 px-3 rounded-md bg-navy-950 text-white focus:outline-none w-full"
+  //         className="flex items-center gap-2 py-2 px-3 rounded-md bg-navy-950 text-foreground focus:outline-none w-full"
   //       >
   //         {/* Profile Avatar */}
   //         <div className="relative h-8 w-8">

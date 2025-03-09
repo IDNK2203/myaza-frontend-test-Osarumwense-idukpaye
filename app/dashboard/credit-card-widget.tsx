@@ -43,12 +43,12 @@ const CreditCardWidget = () => {
   return (
     <div className=" flex flex-col bg-primary rounded-2xl @md:p-6 p-4 shadow mx-auto grow w-full">
       <div>
-        <h2 className="text-white text-lg @md:text-2xl font-bold mb-2">
+        <h2 className="text-foreground text-lg @md:text-2xl font-bold mb-2">
           My Card
         </h2>
 
         <div className="text-card-foreground  mb-1">Card Balance</div>
-        <div className="text-white text-lg @md:text-2xl font-bold mb-6">
+        <div className="text-foreground text-lg @md:text-2xl font-bold mb-6">
           $15,595,015
         </div>
       </div>

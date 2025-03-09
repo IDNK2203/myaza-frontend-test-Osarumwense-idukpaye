@@ -25,8 +25,8 @@ const CreditCard = ({
 
       <div className="flex justify-between items-start mb-8">
         <div>
-          <div className="text-white/80 text-sm mb-1">Current Balance</div>
-          <div className="text-white text-3xl font-medium">{balance}</div>
+          <div className="text-foreground/80 text-sm mb-1">Current Balance</div>
+          <div className="text-foreground text-3xl font-medium">{balance}</div>
         </div>
         <div>
           <div className="w-full flex justify-center max-w-28 items-center">
@@ -36,8 +36,8 @@ const CreditCard = ({
       </div>
 
       <div className="flex justify-between items-center">
-        <div className="text-white tracking-wider">{cardNumber}</div>
-        <div className="text-white">{expiryDate}</div>
+        <div className="text-foreground tracking-wider">{cardNumber}</div>
+        <div className="text-foreground">{expiryDate}</div>
       </div>
     </div>
   );
