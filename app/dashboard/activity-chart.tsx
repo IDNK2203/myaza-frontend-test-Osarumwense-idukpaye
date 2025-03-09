@@ -1,10 +1,5 @@
 "use client";
-
-// import { useState } from "react";
-// import { ChevronDown } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
-// import { Card } from "@/components/ui/card";
 import {
   Select,
   SelectContent,
@@ -47,25 +42,6 @@ export default function ActivityChart() {
 
   // Calculate total percentage
   const totalPercentage = chartData.reduce((acc, item) => acc + item.value, 0);
-
-  // Calculate stroke dash values for the donut segments
-  const calculateStrokeDash = (percentage: number) => {
-    const circumference = 2 * Math.PI * 40; // 40 is the radius
-    return (percentage / 100) * circumference;
-  };
-
-  // Calculate the stroke-dasharray and stroke-dashoffset for each segment
-  let cumulativeOffset = 0;
-  const segments = chartData.map((item) => {
-    const strokeDash = calculateStrokeDash(item.value);
-    const segment = {
-      ...item,
-      strokeDash,
-      strokeOffset: cumulativeOffset,
-    };
-    cumulativeOffset += strokeDash;
-    return segment;
-  });
 
   return (
     <Card className="w-full rounded-lg bg-primary @md:p-6 p-4 border-none text-foreground justify-between grow">
